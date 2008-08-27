@@ -1,0 +1,14 @@
+<plugin name='acegi' version='0.2'>
+  <author>Tsuyoshi Yamamoto</author>
+  <authorEmail>tyama@xmldo.jp</authorEmail>
+  <title>Spring Security (Acegi Security) on Grails Plugin</title>
+  <description>Plugin to use grails domain class from the Spring Security(Acegi Security) and secure your applications with Spring Security(Acegi Security) filters.
+	</description>
+  <documentation>http://docs.codehaus.org/display/GRAILS/AcegiSecurity+Plugin</documentation>
+  <resources>
+    <resource>DefaultAcegiConfig</resource>
+    <resource>AuthBase</resource>
+    <resource>AuthenticateService</resource>
+    <resource>AuthorizeTagLib</resource>
+  </resources>
+</plugin>

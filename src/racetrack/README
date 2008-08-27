@@ -1,0 +1,39 @@
+This sample application supplements the `Going Further with Grails` presentation.  
+
+http://groovygrails.com/gg/conference/speaker?speakerId=4738&showId=131#pr8889
+
+-This application uses the built-in HSQLDB that comes with every Grails app.
+
+-This application was built using Grails 1.0.  If you're using a more recent 
+Grails version you'll likely need to execute `grails upgrade` prior to running 
+the app.
+
+-After executing `grails run-app` to start the application, navigate to
+http://localhost:8080/racetrack. As you explore the application, you'll be
+prompted to log in. You can log in as the admin with user ID `admin` and
+password `pass`.
+
+-Areas of Interest 
+--BootStrap.groovy - In grails-app/conf/BootStrap.groovy, we create and save
+sample data to use when exploring the application. We also populate the
+security-specific data/configuration, including users, roles, and resource
+access rules.
+
+--Acegi Security Plugin - The plugin lives in plugins/acegi-0.2, and it's this
+plugin that provides the application with authorization, authentication, a
+login UI, a logout UI, and more.
+
+--Command Objects - SponsorshipRequest.groovy represents one type of Command
+Object (i.e., a "domain" object sans persistence). You can see the
+SponsorshipRequest class used by SponsorshipController, SponsorshipService,
+and SponsorshipMailer.
+
+--Java Integration / E-mail - Check out SponsorshipMailer in
+src/groovy/SponsorshipMailer.groovy. This simple class uses the Jakarta e-mail
+libraries present in the lib directory. Just by dropping those JARs in the lib
+directory, their functionality is available throughout the application. In
+this case, a service class (SponsorshipService) calls SponsorshipMailer to
+send the e-mail, and SponsorshipMailer just-so-happens to rely on existing
+Java libraries to get the job done. (To test out the e-mail for yourself,
+you'll want to configure the e-mail server settings in
+SponsorshipMailer.groovy to match your local environment.)

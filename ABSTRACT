@@ -1,0 +1,9 @@
+Grails provides a tremendous jump-start to any web application. With easy
+scaffolding and zero-configuration ORM, you're up and running in no time.
+But what's needed to effectively move from a vanilla Grails project to a
+fully-customized application fit for public consumption?
+
+In this session, through live demos we'll explore techniques for quickly
+securing our application, implementing effective (and DRY) UIs, developing
+Grails services, extending Grails with plugins, and even integrating with
+Java when the need arises.
